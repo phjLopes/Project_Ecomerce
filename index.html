@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <title>Merco Book</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+  </head> 
+  <header>
+    <nav class="navbar-expand-lg navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./assets/logo.png" alt="Merco Book"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./assets/logo.png" alt="logo merco book"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Modo noturno</label>
+                  </div></a>
+              </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+      <section class="banners banner-1 d-flex flex-column justify-content-center text-center">
+        <div class="banners-titulo bg-body-secondary py-5">
+          <h2 class="fw-bold">Aves tem asas pesosas tem livros. </h2>
+          <p>Boas-vindas ao Merco Book! O seu site para compra de livros.</p>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <h2 class="text-center fw-bold pb-1">Destaques</h2>
+
+        <div class="container d-flex justify-content-around flex-wrap">
+
+          <div class="card m-4" style="width: 20rem;">
+            <img src="./assets/CafeComDeusPai.png" class="card-img-top"
+              alt="Livro café com Deus Pai">
+            <div class="card-body">
+              <h5 class="card-title py-2 fw-bold">Café com Deus Pai</h5>
+              <p class="card-text"></p>Queremos te encorajar a separar um tempo com Deus e desfrutar de um café na Sua companhia. Uma mensagem para cada dia do ano, para que o seu 2024 seja extraordinário. Garanta o seu..</p>
+              <a href="#" class="btn botao-padrao w-100 fw-bold">R$49,99</a>
+            </div>
+          </div>
+
+          <div class="card m-4" style="width: 20rem;">
+            <img src="./assets/NuncaeHoraDePara.jpg" class="card-img-top" alt="David Goggins">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Nunca é Hora de Parar</h5>
+              <p class="card-text">Do mesmo autor de <strong> Nada pode me ferir</strong>, mais de 5 milhões de livros vendidos.
+                A única coisa que sei é: eu sou David Goggins. Existo, logo termino o que começo...</p>
+              <a href="#" class="btn botao-padrao w-100 fw-bold mt-3">R$44,99</a>
+            </div>
+          </div>
+
+          <div class="card m-4 btn" style="width: 20rem;">
+            <img src="./assets/teste.jpg" class="card-img-top" alt="Na Raça">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Na raça</h5>
+              <p class="card-text">Uma das mais bem-sucedidas histórias de empreendedorismo do Brasil começou com uma demissão. Em 2001, Guilherme Benchimol iniciava sua carreira no mercado financeiro carioca</p>
+              <a href="#" class="btn botao-padrao w-100 fw-bold mt-3">R$45,79</a>
+            
+            </div>
+          </div>
+          <section class="py-5">
+
+            <h2 class="fw-bold text-center pb-1">Ofertas do Dia</h2>
+    
+            <div class="row mx-0">
+    
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-1"
+                        style="width: 18rem;">
+                        <img src="./assets/kobeBriant.jpg" class="card-img-top" alt="Mamba Negra">
+                        <div class="card-body">
+                            <h3 class="card-text text-center fw-bold">Mamba Mentality <br>R$92,16</h3>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-2"
+                        style="width: 18rem;">
+                        <img src="./assets/destruaesseDiario.jpg" class="card-img-top" alt="Destrua esse diario.">
+                        <div class="card-body">
+                            <h3 class="card-text fw-bold text-center"> <br>Destrua este Diário<br>R$29,99</h3>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card border-0 mx-auto btn" style="width: 18rem;">
+                        <img src="./assets/edgar.png" class="card-img-top" alt="Edgar Allan Poe">
+                        <div class="card-body">
+                            <h3 class="card-text text-center fw-bold text-nowrap"> <br>Edgar Allan Poe<br> <br>R$62,99</h3>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card border-0 mx-auto btn" style="width: 18rem;">
+                        <img src="./assets/fundoDoPoço.jpg" class="card-img-top" alt="Fundo do Poço">
+                        <div class="card-body">
+                            <h3 class="card-text text-center fw-bold">Fundo do Poço<br><br>R$34,59</h3>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card border-0 mx-auto btn" style="width: 18rem;">
+                        <img src="./assets/aMorteUmDiaPodeValerAPena.jpg" class="card-img-top" alt="A morte um dia pode valer a pena">
+                        <div class="card-body">
+                            <h3 class="card-text text-center fw-bold">A morte e um dia que vale a pena<br>R$37,41</h3>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card border-0 mx-auto btn" style="width: 18rem;">
+                        <img src="./assets/AarteDaGuerra.jpg" class="card-img-top" alt="A arte da guerra">
+                        <div class="card-body">
+                            <h3 class="card-text text-center fw-bold">Arte da Guerra<br><br>R$16,99</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+          </section>
+
+    </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
